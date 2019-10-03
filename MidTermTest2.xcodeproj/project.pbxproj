@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D9466BD2345723900A2E02A /* forloop.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D9466BC2345723900A2E02A /* forloop.c */; };
+		6D9466BF2345724300A2E02A /* ifelse.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D9466BE2345724300A2E02A /* ifelse.c */; };
 		6DD934FC2344FBD7004123FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DD934FB2344FBD7004123FB /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6D9466BC2345723900A2E02A /* forloop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = forloop.c; sourceTree = "<group>"; };
+		6D9466BE2345724300A2E02A /* ifelse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ifelse.c; sourceTree = "<group>"; };
+		6D9466C02345725200A2E02A /* testqs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testqs.h; sourceTree = "<group>"; };
 		6DD934F82344FBD7004123FB /* MidTermTest2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MidTermTest2; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD934FB2344FBD7004123FB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D9466C12345726B00A2E02A /* TestQs */ = {
+			isa = PBXGroup;
+			children = (
+				6D9466C02345725200A2E02A /* testqs.h */,
+				6D9466BE2345724300A2E02A /* ifelse.c */,
+				6D9466BC2345723900A2E02A /* forloop.c */,
+			);
+			path = TestQs;
+			sourceTree = "<group>";
+		};
 		6DD934EF2344FBD7004123FB = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				6DD934FB2344FBD7004123FB /* main.c */,
+				6D9466C12345726B00A2E02A /* TestQs */,
 			);
 			path = MidTermTest2;
 			sourceTree = "<group>";
@@ -119,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DD934FC2344FBD7004123FB /* main.c in Sources */,
+				6D9466BF2345724300A2E02A /* ifelse.c in Sources */,
+				6D9466BD2345723900A2E02A /* forloop.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
