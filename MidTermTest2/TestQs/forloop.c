@@ -40,18 +40,22 @@ int forloopQ(char *message)
         case 'a':
         case 'A':
             printf ("A: forloop(%d)=%d\n", 13, forloop(13));
+            printf("Correct Answer\n") ;
             break;
         case 'B':
         case 'b':
             printf ("B: forloop(%d)=%d\n", 14, forloop(14));
+            printf("Incorrect Answer\n") ;
             break;
         case 'c':
         case 'C':
             printf ("C: forloop(%d)=%d\n", 15, forloop(15));
+            printf("Incorrect Answer\n") ;
             break;
         case 'd':
         case 'D':
             printf ("D: forloop(%d)=%d\n", 19, forloop(19));
+            printf("Incorrect Answer\n") ;
             break;
             
     }
