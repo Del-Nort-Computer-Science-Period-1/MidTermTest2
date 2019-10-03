@@ -48,18 +48,22 @@ int ifelseQ(char *message)
         case 'a':
         case 'A':
             printf ("A: forloop(%d)=%d\n", 13, ifelseControl(2,13));
+            printf("Correct Answer\n") ;
             break;
         case 'B':
         case 'b':
             printf ("B: forloop(%d)=%d\n", 14, ifelseControl(3,13));
+            printf("Incorrect Answer\n") ;
             break;
         case 'c':
         case 'C':
             printf ("C: forloop(%d)=%d\n", 15, ifelseControl(2,14));
+            printf("Incorrect Answer\n") ;
             break;
         case 'd':
         case 'D':
             printf ("D: forloop(%d)=%d\n", 19, ifelseControl(3,14));
+            printf("Incorrect Answer\n") ;
             break;
     }
     sprintf(message, "Params %d, %d, Result %d", 2, 13, ifelseControl(2, 13));
