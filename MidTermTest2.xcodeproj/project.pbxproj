@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F6123832346507200F4BDC1 /* Binary_Team_Question_8.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F6123822346507200F4BDC1 /* Binary_Team_Question_8.c */; };
 		6D9466BD2345723900A2E02A /* forloop.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D9466BC2345723900A2E02A /* forloop.c */; };
 		6D9466BF2345724300A2E02A /* ifelse.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D9466BE2345724300A2E02A /* ifelse.c */; };
 		6DD934FC2344FBD7004123FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DD934FB2344FBD7004123FB /* main.c */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4F6123822346507200F4BDC1 /* Binary_Team_Question_8.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Binary_Team_Question_8.c; sourceTree = "<group>"; };
 		6D9466BC2345723900A2E02A /* forloop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = forloop.c; sourceTree = "<group>"; };
 		6D9466BE2345724300A2E02A /* ifelse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ifelse.c; sourceTree = "<group>"; };
 		6D9466C02345725200A2E02A /* testqs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testqs.h; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 				6D9466BE2345724300A2E02A /* ifelse.c */,
 				821A16D7234655A3001EF0E0 /* projqs.c */,
 				6D9466BC2345723900A2E02A /* forloop.c */,
+				4F6123822346507200F4BDC1 /* Binary_Team_Question_8.c */,
 			);
 			path = TestQs;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				821A16D8234655A3001EF0E0 /* projqs.c in Sources */,
 				6DD934FC2344FBD7004123FB /* main.c in Sources */,
 				6D9466BF2345724300A2E02A /* ifelse.c in Sources */,
+				4F6123832346507200F4BDC1 /* Binary_Team_Question_8.c in Sources */,
 				6D9466BD2345723900A2E02A /* forloop.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
