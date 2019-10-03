@@ -11,4 +11,5 @@
 #include <stdio.h>
 int forloopQ(char *message);
 int ifelseQ(char *message);
+int BinaryQ (char *message);
 #endif /* testqs_h */
