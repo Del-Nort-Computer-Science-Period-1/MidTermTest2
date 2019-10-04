@@ -12,13 +12,12 @@
 //function protypes
 #include "testqs.h"
 extern int score;
-int score ;
 #define MENUITEMS 20
 #define MAXMSGLENGTH 80
 
 int main(int argc, const char * argv[]) {
     printf("%d", score) ;
-    int score = 0 ;
+    int score ;
     int menuRun[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};  // 20 array positions initialized
     char runMsg2D[MENUITEMS][MAXMSGLENGTH];         // 2D array ie 20x80
     char *notRun = "Not Run";
@@ -53,7 +52,6 @@ int main(int argc, const char * argv[]) {
             switch(input) { // switch verifies input and calls function for selected Menu Item
                 case 1:
                     menuRun[input] = forloopQ(runMsg2D[input]);
-                    printf("Your score is %d out of 1\n", score) ;
                     break;
                 case 2:
                     menuRun[input] = ifelseQ(runMsg2D[input]);
