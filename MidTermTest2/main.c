@@ -29,12 +29,12 @@ int main(int argc, const char * argv[]) {
         printf("|  0 . Exit                            | \n");
         printf("|  1. for loop calc                    | %s\n", (menuRun[1] ? runMsg2D[1] : notRun) );
         printf("|  2. if loop calc                     | %s\n", (menuRun[2] ? runMsg2D[2] : notRun) );
-        printf("|  3. xxx                              | %s\n", (menuRun[3] ? runMsg2D[3] : notRun) );
+        printf("|  3. operators question               | %s\n", (menuRun[3] ? runMsg2D[3] : notRun) );
         printf("|  4. xxx                              | %s\n", (menuRun[4] ? runMsg2D[4] : notRun) );
         printf("|  5. xxx                              | %s\n", (menuRun[5] ? runMsg2D[5] : notRun) );
         printf("|  6. xxx                              | %s\n", (menuRun[6] ? runMsg2D[6] : notRun) );
         printf("|  7. xxx                              | %s\n", (menuRun[7] ? runMsg2D[7] : notRun) );
-        printf("|  8. Binary Q                              | %s\n", (menuRun[8] ? runMsg2D[8] : notRun) );
+        printf("|  8. Binary Q                         | %s\n", (menuRun[8] ? runMsg2D[8] : notRun) );
         printf("|  9. xxx                              | %s\n", (menuRun[9] ? runMsg2D[9] : notRun) );
         printf("| 10. xxx                              | %s\n", (menuRun[10] ? runMsg2D[10] : notRun) );
         printf("| Select number you would like to run: |\n");
@@ -55,7 +55,7 @@ int main(int argc, const char * argv[]) {
                     menuRun[input] = ifelseQ(runMsg2D[input]);
                     break;
                 case 3:
-                    //datatypes();
+                    menuRun[input] = operatorsrl(runMsg2D[input]);
                     break;
                 case 4:
                     //rectanglelab();

@@ -12,4 +12,5 @@
 int forloopQ(char *message);
 int ifelseQ(char *message);
 int BinaryQ (char *message);
+int operatorsrl (char *message);
 #endif /* testqs_h */
