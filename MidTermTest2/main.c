@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
         printf("|  1. for loop calc                    | %s\n", (menuRun[1] ? runMsg2D[1] : notRun) );
         printf("|  2. if loop calc                     | %s\n", (menuRun[2] ? runMsg2D[2] : notRun) );
         printf("|  3. xxx                              | %s\n", (menuRun[3] ? runMsg2D[3] : notRun) );
-        printf("|  4. xxx                              | %s\n", (menuRun[4] ? runMsg2D[4] : notRun) );
+        printf("|  4. for loop question                | %s\n", (menuRun[4] ? runMsg2D[4] : notRun) );
         printf("|  5. xxx                              | %s\n", (menuRun[5] ? runMsg2D[5] : notRun) );
         printf("|  6. xxx                              | %s\n", (menuRun[6] ? runMsg2D[6] : notRun) );
         printf("|  7. xxx                              | %s\n", (menuRun[7] ? runMsg2D[7] : notRun) );
@@ -58,7 +58,7 @@ int main(int argc, const char * argv[]) {
                     //datatypes();
                     break;
                 case 4:
-                    //rectanglelab();
+                    controlflowoperators();
                     break;
                 case 5:
                     //temperaturelab();
