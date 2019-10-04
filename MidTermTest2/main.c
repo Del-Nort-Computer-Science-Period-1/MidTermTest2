@@ -16,8 +16,7 @@ extern int score;
 #define MAXMSGLENGTH 80
 
 int main(int argc, const char * argv[]) {
-    printf("%d", score) ;
-    int score ;
+    int score = 0;
     int menuRun[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};  // 20 array positions initialized
     char runMsg2D[MENUITEMS][MAXMSGLENGTH];         // 2D array ie 20x80
     char *notRun = "Not Run";
@@ -28,7 +27,7 @@ int main(int argc, const char * argv[]) {
         printf("||      MENU SELECTION PORTFOLIO      ||\n");
         printf("|--------------------------------------|\n");
         printf("|Options:                   Run Status:| %d of %d\n", menuRun[0], 10);  // Beware of 10
-        printf("|  0 . Exit                            | \n");
+        printf("|  0 . Exit                      Score:| %d\n", score);
         printf("|  1. for loop calc                    | %s\n", (menuRun[1] ? runMsg2D[1] : notRun) );
         printf("|  2. if loop calc                     | %s\n", (menuRun[2] ? runMsg2D[2] : notRun) );
         printf("|  3. xxx                              | %s\n", (menuRun[3] ? runMsg2D[3] : notRun) );
