@@ -32,7 +32,7 @@ int main(int argc, const char * argv[]) {
         printf("|  2. if loop calc                     | %s\n", (menuRun[2] ? runMsg2D[2] : notRun) );
         printf("|  3. xxx                              | %s\n", (menuRun[3] ? runMsg2D[3] : notRun) );
         printf("|  4. for loop question                | %s\n", (menuRun[4] ? runMsg2D[4] : notRun) );
-        printf("|  5. xxx                              | %s\n", (menuRun[5] ? runMsg2D[5] : notRun) );
+        printf("|  5. operators question               | %s\n", (menuRun[5] ? runMsg2D[5] : notRun) );
         printf("|  6. seconds calc                     | %s\n", (menuRun[6] ? runMsg2D[6] : notRun) );
         printf("|  7. Structures Q                     | %s\n", (menuRun[7] ? runMsg2D[7] : notRun) );
         printf("|  8. Binary Q                         | %s\n", (menuRun[8] ? runMsg2D[8] : notRun) );
