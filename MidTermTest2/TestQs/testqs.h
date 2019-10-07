@@ -14,9 +14,9 @@ int ifelseQ(char *message);
 int BinaryQ (char *message);
 int projqs(char *message);
 void controlflowoperators (void);
-int structuresmc(int i);
+int structuresmc(char *message);
 
-int operatorsrl(void);
+void operatorsrl (void);
 int projMgrs(void);
 
 int conversionQ(char *message);
