@@ -71,8 +71,13 @@ int ifelseQ(char *message)
             score += 0;
             break;
     }
-    sprintf(message, "Params %d, %d, Result %d", 2, 13, ifelseControl(2, 13));
+    if (score == 1) {
+        sprintf(message, "1/1");
+    }
+    else {
+        sprintf(message, "0/0");
+    }
     printf("%s\n", message);
     printf("Your score is %d out of 1", score) ;
-    return 1;
+    return *message;
 }

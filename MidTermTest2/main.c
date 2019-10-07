@@ -39,6 +39,9 @@ int main(int argc, const char * argv[]) {
         printf("|  9. array Q                          | %s\n", (menuRun[9] ? runMsg2D[9] : notRun) );
         printf("| 10.                                  | %s\n", (menuRun[10] ? runMsg2D[10] : notRun) );
         printf("| Select number you would like to run: |\n");
+        int totalscore = menuRun[1]/49 + menuRun[2]/49 ;
+        
+        printf("Your total score is %d out of %d\n", totalscore, menuRun[0]) ;
         printf("----------------------------------------\n");
         
         
