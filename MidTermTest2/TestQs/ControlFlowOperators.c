@@ -22,19 +22,19 @@ void controlflowoperators(){
     switch (ans) {
         case 'a':
         case 'A':
-        printf("Correct!\n");
+            printf("Correct!\n");
             break;
         case 'b':
         case 'B':
-        printf("Incorrect: \n");
+            printf("Incorrect: The loop will increment the value of num by 1, then 2, then 3, and so on...\n");
             break;
         case 'c':
         case 'C':
-        printf("Incorrect: \n");
+            printf("Incorrect: The loop will increment the value of num by 1, then 2, then 3, and so on...\n");
             break;
         case 'd':
         case 'D':
-        printf("Incorrect: \n");
+            printf("Incorrect: The loop will increment the value of num by 1, then 2, then 3, and so on...\n");
             break;
     }
 }
