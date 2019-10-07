@@ -32,13 +32,16 @@ int main(int argc, const char * argv[]) {
         printf("|  2. if loop calc                     | %s\n", (menuRun[2] ? runMsg2D[2] : notRun) );
         printf("|  3. operators question               | %s\n", (menuRun[3] ? runMsg2D[3] : notRun) );
         printf("|  4. for loop question                | %s\n", (menuRun[4] ? runMsg2D[4] : notRun) );
-        printf("|  5. xxx                              | %s\n", (menuRun[5] ? runMsg2D[5] : notRun) );
+        printf("|  5. data type conversion             | %s\n", (menuRun[5] ? runMsg2D[5] : notRun) );
         printf("|  6. seconds calc                     | %s\n", (menuRun[6] ? runMsg2D[6] : notRun) );
         printf("|  7. Structures Q                     | %s\n", (menuRun[7] ? runMsg2D[7] : notRun) );
         printf("|  8. Binary Q                         | %s\n", (menuRun[8] ? runMsg2D[8] : notRun) );
-        printf("|  9. xxx                              | %s\n", (menuRun[9] ? runMsg2D[9] : notRun) );
+        printf("|  9. array Q                          | %s\n", (menuRun[9] ? runMsg2D[9] : notRun) );
         printf("| 10.                                  | %s\n", (menuRun[10] ? runMsg2D[10] : notRun) );
         printf("| Select number you would like to run: |\n");
+        int totalscore = menuRun[1]/49 + menuRun[2]/49 ;
+        
+        printf("Your total score is %d out of %d\n", totalscore, menuRun[0]) ;
         printf("----------------------------------------\n");
         
         
@@ -62,7 +65,8 @@ int main(int argc, const char * argv[]) {
                     controlflowoperators();
                     break;
                 case 5:
-                    //temperaturelab();
+                    //datatypeconversion();
+                    menuRun[input] = conversionQ(runMsg2D[input]);
                     break;
                 case 6:
                     menuRun[input] = projqs(runMsg2D[input]);
@@ -77,7 +81,7 @@ int main(int argc, const char * argv[]) {
                     // function: questionManager drives logic for Test Questions
                     // param: runMsg2D[] is updated through function call
                     // returns: 0
-                    //menuRun[input] = questionDriver(runMsg2D[input]);
+                    projMgrs();
                     break;
                 case 10:
                     // function: histogram prints starts
