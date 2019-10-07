@@ -17,8 +17,8 @@ int forloop(int val)
 }
 
 
-int forloopQ(char *message)
-{
+int forloopQ(char *message) {
+    int score = 0;
     char answer1;
     printf("----------------------------------------\n");
     fputs (
@@ -41,27 +41,37 @@ int forloopQ(char *message)
         case 'A':
             printf ("A: forloop(%d)=%d\n", 13, forloop(13));
             printf("Correct Answer\n") ;
+            score += 1 ;
             break;
         case 'B':
         case 'b':
             printf ("B: forloop(%d)=%d\n", 14, forloop(14));
             printf("Incorrect Answer\n") ;
+            score += 0 ;
             break;
         case 'c':
         case 'C':
             printf ("C: forloop(%d)=%d\n", 15, forloop(15));
             printf("Incorrect Answer\n") ;
+            score += 0 ;
             break;
         case 'd':
         case 'D':
             printf ("D: forloop(%d)=%d\n", 19, forloop(19));
             printf("Incorrect Answer\n") ;
+            score += 0 ;
             break;
             
     }
-    sprintf(message, "Param %d, Result %d", 13, forloop(13));
-    printf("%s", message);
+    if (score == 1) {
+        sprintf(message, "1/1");
+    }
+    else {
+        sprintf(message, "0/0");
+    }
+    printf("%s\n", message);
+    printf("Your score is %d out of 1\n", score) ;
     
-    return 1;
+    return *message ;
 }
 
