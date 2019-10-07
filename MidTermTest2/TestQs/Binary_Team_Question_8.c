@@ -54,60 +54,60 @@ int BinaryQ(char *message){
     int ansr=0, input;
     printf("what is %i in binary",n);
     
-        int cas = rand() % 3;
+    int cas = rand() % 3;
     
-        switch (cas){
+    switch (cas){
         case 0:
-            printf("\n1\n%lld\n",ansr1);
-            printf("\n2\n");
+            printf("\n 1: %lld\n",ansr1);
+            printf("\n 2: \n");
             option3();
-            printf("\n3\n");
+            printf("\n 3: \n");
             option4();
-            printf("\n4\n");
+            printf("\n 4: \n");
             option2();
             ansr = 1;
             break;
         case 1:
-            printf("\n1\n");
+            printf("\n 1: \n");
             option3();
-            printf("\n2\n%lld/n",ansr1);
-            printf("\n3\n");
+            printf("\n 2:  \n %lld \n",ansr1);
+            printf("\n 3: \n");
             option2();
-            printf("\n4\n");
+            printf("\n 4: \n");
             option4();
             ansr = 2;
             break;
         case 2:
-            printf("\n1\n");
+            printf("\n 1: \n");
             option4();
-            printf("\n2\n");
+            printf("\n 2: \n");
             option2();
-            printf("\n3\n");
+            printf("\n 3: \n");
             option3();
-            printf("\n4\n%lld\n",ansr1);
+            printf("\n 4: \n%lld",ansr1);
             ansr = 4;
             break;
         case 3:
-            printf("\n1\n");
+            printf("\n 1: \n");
             option2();
-            printf("\n2\n");
+            printf("\n 2: \n");
             option4();
-            printf("\n3\n%lld\n",ansr1);
-            printf("\n4\n");
+            printf("\n 3: %lld \n",ansr1);
+            printf("\n 4: \n");
             option3();
             printf("\n");
             ansr = 3;
             break;
         }
     
-        printf("\nwhat is the answer");
+        printf("\nwhat is the answer?\n");
         scanf("%i",&input);
 
         if (ansr == input){
-            printf("correct");
+            printf("correct\n");
         }
         else {
-            printf("incorrrect");
+            printf("incorrect\n");
         }
     
     
