@@ -12,5 +12,6 @@
 int forloopQ(char *message);
 int ifelseQ(char *message);
 int BinaryQ (char *message);
+int projqs(char *message);
 void controlflowoperators (void);
 #endif /* testqs_h */
