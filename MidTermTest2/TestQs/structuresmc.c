@@ -60,7 +60,7 @@ int structuresmc(char *message) {
         case 'C':
            // printf ("C: struc(%d)=%d\n", powerrangers(3));
             printf("Yes, that is correct!\n");
-            printf("Ignore the following message, you are correct.");
+            printf("Ignore the following message: ");
         case 'd':
         case 'D':
             //printf ("D: struc(%d)=%d\n", powerrangers(4));
