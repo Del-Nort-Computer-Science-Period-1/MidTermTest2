@@ -25,14 +25,11 @@ int projqs(char *message) {
     char corans_upcase = 'C';
     char corans_lowcase = 'c';
 
-    
-    
-    
 double minutes;
 double seconds;
 char answer;
     
-    printf("\nIf %i is inputseconds, convert %i to minutes and seconds.\n", inputseconds, inputseconds);
+    printf("\nIf %i is inputseconds, convert %i to minutes and seconds.\n", inputseconds, inputseconds); //printing question
     printf("___________________________________________________________\n\n");
     printf("Function:\n\n");
     fputs (
@@ -54,7 +51,7 @@ char answer;
     scanf("%s", &answer);
     printf("_______________________________________________\n\n");
     
-    printf("In %d seconds, there are:\n", inputseconds);
+    printf("In %d seconds, there are:\n", inputseconds); //running the function
     if((inputseconds/60)>=1) {
         minutes = (inputseconds/60 - (inputseconds%60)/60);
     } else {
@@ -63,10 +60,10 @@ char answer;
     seconds = inputseconds-(minutes*60);
     
     
-    printf("Minutes:    %lf \nSeconds:    %lf \n", minutes, seconds);
+    printf("Minutes:    %lf \nSeconds:    %lf \n", minutes, seconds); //displaying answer
 
-    if(answer == corans_lowcase || answer == corans_upcase) {
-        printf("Good Job! Your answer was correct!");
+    if(answer == corans_lowcase || answer == corans_upcase) { //printing if answer is correct or incorrect
+        printf("Good Job! Your answer was correct!");  //score is made and returned to main.c
         sprintf(message, "score: 100%%");
         } else {
             printf("Your answer was incorrect.");
