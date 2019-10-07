@@ -16,8 +16,6 @@ extern int score;
 #define MAXMSGLENGTH 80
 
 int main(int argc, const char * argv[]) {
-    printf("%d", score) ;
-    int score ;
     int menuRun[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};  // 20 array positions initialized
     char runMsg2D[MENUITEMS][MAXMSGLENGTH];         // 2D array ie 20x80
     char *notRun = "Not Run";
@@ -40,6 +38,9 @@ int main(int argc, const char * argv[]) {
         printf("|  9. xxx                              | %s\n", (menuRun[9] ? runMsg2D[9] : notRun) );
         printf("| 10. xxx                              | %s\n", (menuRun[10] ? runMsg2D[10] : notRun) );
         printf("| Select number you would like to run: |\n");
+        int totalscore = menuRun[1]/49 + menuRun[2]/49 ;
+        
+        printf("Your total score is %d out of %d\n", totalscore, menuRun[0]) ;
         printf("----------------------------------------\n");
         
         
