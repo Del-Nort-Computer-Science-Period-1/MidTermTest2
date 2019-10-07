@@ -36,7 +36,7 @@ int structuresmc(char *message) {
            "}\n",
            stdout);
     
-    printf("What is the third position in the array using 0 based indexing?\n");
+    printf("What is returned when i=3 in this code?\n");
     printf("----------------------------------------\n");
     printf("Enter A, B, C, or D");
     printf("                                                                            \n");
