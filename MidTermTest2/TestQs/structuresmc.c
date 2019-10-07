@@ -30,6 +30,7 @@ int structuresmc(char *message) {
     char answer1;
     printf("----------------------------------------\n");
     fputs (
+           "{\n"
            "int powerrangers[SIZE] = {2,8,11,13,18,10099354};\n"
            "return list[i];\n"
            "}\n",
