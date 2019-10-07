@@ -13,4 +13,6 @@ int forloopQ(char *message);
 int ifelseQ(char *message);
 int BinaryQ (char *message);
 void controlflowoperators (void);
+int structuresmc(int i);
+int operatorsrl(char *message);
 #endif /* testqs_h */

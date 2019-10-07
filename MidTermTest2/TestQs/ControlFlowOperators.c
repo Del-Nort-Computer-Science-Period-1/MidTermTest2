@@ -14,23 +14,27 @@ void controlflowoperators(){
     printf (")    num +=x;\n");
     printf ("}\n");
     printf ("return num;\n");
-    
-    printf("What would control(7) return?\n");
-    printf("a: 52\nb:33\nc:51\nd:53");
     char ans;
-    scanf("%c", &ans);
+    printf("What would control(7) return?\n");
+    printf("a:52\nb:33\nc:51\nd:53\n");
+    while ((ans = getchar()) != '\n');
+    ans = getchar();
     switch (ans) {
         case 'a':
         case 'A':
-        printf("Correct!\n");
+            printf("Correct!\n");
+            break;
         case 'b':
         case 'B':
-        printf("Incorrect: \n");
+            printf("Incorrect: The loop will increment the value of num by 1, then 2, then 3, and so on...\n");
+            break;
         case 'c':
         case 'C':
-        printf("Incorrect: \n");
+            printf("Incorrect: The loop will increment the value of num by 1, then 2, then 3, and so on...\n");
+            break;
         case 'd':
         case 'D':
-        printf("Incorrect: \n");
+            printf("Incorrect: The loop will increment the value of num by 1, then 2, then 3, and so on...\n");
+            break;
     }
 }
