@@ -51,62 +51,65 @@ int BinaryQ(char *message){
     //ansr
     int n = rand() % 10;
     long long ansr1 = convertDecimalToBinary(n);
-    int ansr, input;
+    int ansr=0, input;
     printf("what is %i in binary",n);
     
-int cas = rand() % 4;
-    switch (cas){
-case 1:
-    printf("\n1\n%lld\n",ansr1);
-    printf("\n2\n");
-    option3();
-    printf("\n3\n");
-    option4();
-    printf("\n4\n");
-    option2();
-    ansr = 1;
+        int cas = rand() % 3;
+    
+        switch (cas){
+        case 0:
+            printf("\n1\n%lld\n",ansr1);
+            printf("\n2\n");
+            option3();
+            printf("\n3\n");
+            option4();
+            printf("\n4\n");
+            option2();
+            ansr = 1;
             break;
-case 2:
-    printf("\n1\n");
-    option3();
-    printf("\n2\n%lld/n",ansr1);
-    printf("\n3\n");
-    option2();
-    printf("\n4\n");
-    option4();
-    ansr = 2;
+        case 1:
+            printf("\n1\n");
+            option3();
+            printf("\n2\n%lld/n",ansr1);
+            printf("\n3\n");
+            option2();
+            printf("\n4\n");
+            option4();
+            ansr = 2;
             break;
-case 3:
-    printf("\n1\n");
-    option4();
-    printf("\n2\n");
-    option2();
-    printf("\n3\n");
-    option3();
-    printf("\n4\n%lld\n",ansr1);
-    ansr = 4;
+        case 2:
+            printf("\n1\n");
+            option4();
+            printf("\n2\n");
+            option2();
+            printf("\n3\n");
+            option3();
+            printf("\n4\n%lld\n",ansr1);
+            ansr = 4;
             break;
-case 4:
-    printf("\n1\n");
-    option2();
-    printf("\n2\n");
-    option4();
-    printf("\n3\n%lld\n",ansr1);
-    printf("\n4\n");
-    option3();
-    printf("\n");
-    ansr = 3;
+        case 3:
+            printf("\n1\n");
+            option2();
+            printf("\n2\n");
+            option4();
+            printf("\n3\n%lld\n",ansr1);
+            printf("\n4\n");
+            option3();
+            printf("\n");
+            ansr = 3;
             break;
-    }
-    printf("\nwhat is the answer");
-    scanf("%i",&input);
-    if (ansr == input){
-        printf("correct");
-    }
-    else {
-        printf("incorrrect");
-    }
-            
+        }
+    
+        printf("\nwhat is the answer");
+        scanf("%i",&input);
+
+        if (ansr == input){
+            printf("correct");
+        }
+        else {
+            printf("incorrrect");
+        }
+    
     
 return 0;
 }
