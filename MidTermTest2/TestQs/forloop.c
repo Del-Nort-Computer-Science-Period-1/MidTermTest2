@@ -63,10 +63,15 @@ int forloopQ(char *message) {
             break;
             
     }
-    sprintf(message, "Param %d, Result %d", 13, forloop(13));
+    if (score == 1) {
+        sprintf(message, "1/1");
+    }
+    else {
+        sprintf(message, "0/1");
+    }
     printf("%s\n", message);
     printf("Your score is %d out of 1\n", score) ;
     
-    return 1 ;
+    return *message ;
 }
 

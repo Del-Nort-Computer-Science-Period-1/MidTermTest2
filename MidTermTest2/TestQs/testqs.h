@@ -12,6 +12,12 @@
 int forloopQ(char *message);
 int ifelseQ(char *message);
 int BinaryQ (char *message);
+int projqs(char *message);
 void controlflowoperators (void);
 int structuresmc(char *);
+int structuresmc(int i);
+int operatorsrl(char *message);
+int projMgrs(void);
+
+int conversionQ(char *message);
 #endif /* testqs_h */
