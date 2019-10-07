@@ -57,47 +57,48 @@ int BinaryQ(char *message){
 int cas = rand() % 4;
     switch (cas){
 case 1:
-    printf("1\n%lld",ansr1);
-    printf("2\n");
+    printf("\n1\n%lld\n",ansr1);
+    printf("\n2\n");
     option3();
-    printf("3\n");
+    printf("\n3\n");
     option4();
-    printf("4\n");
+    printf("\n4\n");
     option2();
     ansr = 1;
             break;
 case 2:
-    printf("1\n");
+    printf("\n1\n");
     option3();
-    printf("2\n%lld",ansr1);
-    printf("3\n");
+    printf("\n2\n%lld/n",ansr1);
+    printf("\n3\n");
     option2();
-    printf("4\n");
+    printf("\n4\n");
     option4();
     ansr = 2;
             break;
 case 3:
-    printf("1\n");
+    printf("\n1\n");
     option4();
-    printf("2\n");
+    printf("\n2\n");
     option2();
-    printf("3\n");
+    printf("\n3\n");
     option3();
-    printf("4\n%lld",ansr1);
+    printf("\n4\n%lld\n",ansr1);
     ansr = 4;
             break;
 case 4:
-    printf("1\n");
+    printf("\n1\n");
     option2();
-    printf("2\n");
+    printf("\n2\n");
     option4();
-    printf("3\n%lld",ansr1);
-    printf("4\n");
+    printf("\n3\n%lld\n",ansr1);
+    printf("\n4\n");
     option3();
+    printf("\n");
     ansr = 3;
             break;
     }
-    printf("what is the answer");
+    printf("\nwhat is the answer");
     scanf("%i",&input);
     if (ansr == input){
         printf("correct");
