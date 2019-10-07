@@ -17,6 +17,7 @@ extern int score;
 
 int main(int argc, const char * argv[]) {
     int score = 0;
+    int breakquestion[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     int menuRun[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};  // 20 array positions initialized
     char runMsg2D[MENUITEMS][MAXMSGLENGTH];         // 2D array ie 20x80
     char *notRun = "Not Run";
@@ -53,11 +54,25 @@ int main(int argc, const char * argv[]) {
             //menu action
             switch(input) { // switch verifies input and calls function for selected Menu Item
                 case 1:
-                    menuRun[input] = forloopQ(runMsg2D[input]);
-                    break;
+                    if (breakquestion[input] == 1) {
+                        menuRun[0] -= 1;
+                        break;
+                    }
+                    else {
+                        menuRun[input] = forloopQ(runMsg2D[input]);
+                        breakquestion[input] += 1 ;
+                        break;
+                    }
                 case 2:
-                    menuRun[input] = ifelseQ(runMsg2D[input]);
-                    break;
+                    if (breakquestion[input] == 1) {
+                        menuRun[0] -= 1;
+                        break;
+                    }
+                    else {
+                        menuRun[input] = ifelseQ(runMsg2D[input]);
+                        breakquestion[input] += 1 ;
+                        break;
+                    }
                 case 3:
                     menuRun[input] = operatorsrl(runMsg2D[input]);
                     break;
