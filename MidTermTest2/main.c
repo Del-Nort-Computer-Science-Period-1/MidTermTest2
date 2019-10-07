@@ -56,7 +56,7 @@ int main(int argc, const char * argv[]) {
                     menuRun[input] = ifelseQ(runMsg2D[input]);
                     break;
                 case 3:
-                    menuRun[input] = operatorsrl(runMsg2D[input]);
+                    operatorsrl();
                     break;
                 case 4:
                     controlflowoperators();

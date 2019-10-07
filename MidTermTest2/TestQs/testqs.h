@@ -14,5 +14,5 @@ int ifelseQ(char *message);
 int BinaryQ (char *message);
 void controlflowoperators (void);
 int structuresmc(int i);
-int operatorsrl(char *message);
+void operatorsrl(void);
 #endif /* testqs_h */
