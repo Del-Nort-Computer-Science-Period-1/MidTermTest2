@@ -4,81 +4,70 @@
 //
 //  Created by Szeto, Colin on 10/3/19.
 //  Copyright © 2019 Huynh, Kaitlyn. All rights reserved.
-//
+//  Coded by Do, Kevin.
+//  Last Edited on 10/7/19 by Do, Kevin.
 
 #include "testqs.h"
 
 int projqs(char *message) {
-int inputseconds = 1592748;
-double days;
+
+    
+    //make question here
+    int inputseconds = 531;  //question
+    //--------------------------------------------------------
+    //answer choices
+    /*[A]*/  char *answerA = "5 minutes, 10 seconds";
+    /*[B]*/  char *answerB = "6 minutes, 36 seconds";
+    /*[C]*/  char *answerC = "8 minutes, 51 seconds";
+    /*[D]*/  char *answerD = "8 minutes, 15 seconds";
+    //--------------------------------------------------------
+    //letter of correct answer choice (upper and lower cases)
+    char corans_upcase = 'C';
+    char corans_lowcase = 'c';
+
 double minutes;
-double hours;
 double seconds;
 char answer;
     
-    printf("\nIf %i is inputseconds, convert %i to days, hours, minutes, and seconds.\n", inputseconds, inputseconds);
-    printf("______________________________________________________\n\n");
+    printf("\nIf %i is inputseconds, convert %i to minutes and seconds.\n", inputseconds, inputseconds); //printing question
+    printf("___________________________________________________________\n\n");
     printf("Function:\n\n");
     fputs (
-           "if(inputseconds>=86400) {\n"
-               "days = inputseconds/86400 -((inputseconds%86400)/86400);\n"
+           "if((inputseconds/60)>=1) {\n"
+               "\tminutes = (inputseconds/60 - (inputseconds%60)/60);\n"
            "} else {\n"
-               "days = 0;\n"
+               "\tminutes = 0;\n"
            "}\n"
-           
-           "if((inputseconds%86400)>=3600) {\n"
-               "hours = (inputseconds%86400)/3600 - (((inputseconds%86400)%3600)/3600);\n"
-           "} else {\n"
-               "hours = 0;\n"
-           "}\n"
-           
-           "if(((inputseconds%86400)%3600)>=60) {\n"
-               "minutes = ((inputseconds%86400)%3600)/60 - ((((inputseconds%86400)%3600)%60)/60);\n"
-           "} else {\n"
-               "minutes = 0;\n"
-           "}\n"
-           "seconds = (((inputseconds%86400)%3600)%60);\n",
+           "seconds = inputseconds-(minutes*60);\n",
            stdout);
-    printf("_______________________________________________\n\n");
-    printf("[A]: 20 days, 14 hours, 32 minutes, 10 seconds\n");
-    printf("[B]: 22 days, 6 hours, 13 minutes, 38 seconds\n");
-    printf("[C]: 18 days, 10 hours, 25 minutes, 48 seconds\n");
-    printf("[D]: 16 days, 8 hours, 59 minutes, 21 seconds\n");
+    printf("___________________________________________________________\n\n");
+    printf("[A]: %s\n", answerA);
+    printf("[B]: %s\n", answerB);
+    printf("[C]: %s\n", answerC);
+    printf("[D]: %s\n", answerD);
 
     
     
     scanf("%s", &answer);
     printf("_______________________________________________\n\n");
     
-    printf("In %d seconds, there are:\n", inputseconds);
-    if(inputseconds>=86400) {
-        days = inputseconds/86400 -((inputseconds%86400)/86400);
-    } else {
-        days = 0;
-    }
-    
-    if((inputseconds%86400)>=3600) {
-        hours = (inputseconds%86400)/3600 - (((inputseconds%86400)%3600)/3600);
-    } else {
-        hours = 0;
-    }
-    
-    if(((inputseconds%86400)%3600)>=60) {
-        minutes = ((inputseconds%86400)%3600)/60 - ((((inputseconds%86400)%3600)%60)/60);
+    printf("In %d seconds, there are:\n", inputseconds); //running the function
+    if((inputseconds/60)>=1) {
+        minutes = (inputseconds/60 - (inputseconds%60)/60);
     } else {
         minutes = 0;
     }
-    seconds = (((inputseconds%86400)%3600)%60);
+    seconds = inputseconds-(minutes*60);
     
     
-    printf("Days:       %lf \nHours:      %lf \nMinutes:    %lf \nSeconds:    %lf \n", days, hours, minutes, seconds);
+    printf("Minutes:    %lf \nSeconds:    %lf \n", minutes, seconds); //displaying answer
 
-    if(answer == 'c' || answer == 'C') {
-        printf("Good Job! Your answer was correct!");
+    if(answer == corans_lowcase || answer == corans_upcase) { //printing if answer is correct or incorrect
+        printf("Good Job! Your answer was correct!");  //score is made and returned to main.c
         sprintf(message, "score: 100%%");
         } else {
             printf("Your answer was incorrect.");
-            sprintf(message, "score: 0%%");
+            sprintf(message, "Score: 0%%");
         }
     
     
