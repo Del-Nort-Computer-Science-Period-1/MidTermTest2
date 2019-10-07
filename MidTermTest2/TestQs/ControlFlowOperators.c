@@ -22,25 +22,25 @@ void controlflowoperators(){
     printf ("}\n");
     char ans;
     printf("What would control(7) return?\n");
-    printf("a:52\nb:54\nc:51\nd:53\n");
+    printf("a:%d\nb:%d\nc:%d\nd:%d\n", control(7), control(5), control(10), control(8));
     while ((ans = getchar()) != '\n');
     ans = getchar();
     switch (ans) {
         case 'a':
         case 'A':
-            printf("Correct!%d\n", control(7));
+            printf("Correct!\n");
             break;
         case 'b':
         case 'B':
-            printf("Incorrect %d\n", control(9));
+            printf("Incorrect, this is the answer to control(5)\n");
             break;
         case 'c':
         case 'C':
-            printf("Incorrect %d\n", control(6));
+            printf("Incorrect, this is the answer to control(10)\n");
             break;
         case 'd':
         case 'D':
-            printf("Incorrect %d\n", control(8));
+            printf("Incorrect, this is the answer to control(8)\n");
             break;
     }
 }
