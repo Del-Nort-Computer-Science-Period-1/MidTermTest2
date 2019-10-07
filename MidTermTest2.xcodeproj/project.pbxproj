@@ -13,6 +13,8 @@
 		6DD934FC2344FBD7004123FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DD934FB2344FBD7004123FB /* main.c */; };
 		7FFC0FC7234799A4001E43FD /* ControlFlowOperators.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC0FC6234799A4001E43FD /* ControlFlowOperators.c */; };
 		821A16D8234655A3001EF0E0 /* projqs.c in Sources */ = {isa = PBXBuildFile; fileRef = 821A16D7234655A3001EF0E0 /* projqs.c */; };
+		92A157CA234B902500BE415C /* conversion.c in Sources */ = {isa = PBXBuildFile; fileRef = 92A157C9234B902500BE415C /* conversion.c */; };
+		A5E141082347D99E00A09A90 /* structuresmc.c in Sources */ = {isa = PBXBuildFile; fileRef = A5E141072347D99E00A09A90 /* structuresmc.c */; };
 		E5DDBCFA23479E4900A7196C /* operatorsrl.c in Sources */ = {isa = PBXBuildFile; fileRef = E5DDBCF923479E4900A7196C /* operatorsrl.c */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		6DD934FB2344FBD7004123FB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		7FFC0FC6234799A4001E43FD /* ControlFlowOperators.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ControlFlowOperators.c; sourceTree = "<group>"; };
 		821A16D7234655A3001EF0E0 /* projqs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = projqs.c; sourceTree = "<group>"; };
+		92A157C9234B902500BE415C /* conversion.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = conversion.c; sourceTree = "<group>"; };
+		A5E141072347D99E00A09A90 /* structuresmc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = structuresmc.c; sourceTree = "<group>"; };
 		E5DDBCF923479E4900A7196C /* operatorsrl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = operatorsrl.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +65,8 @@
 				4F6123822346507200F4BDC1 /* Binary_Team_Question_8.c */,
 				7FFC0FC6234799A4001E43FD /* ControlFlowOperators.c */,
 				E5DDBCF923479E4900A7196C /* operatorsrl.c */,
+				A5E141072347D99E00A09A90 /* structuresmc.c */,
+				92A157C9234B902500BE415C /* conversion.c */,
 			);
 			path = TestQs;
 			sourceTree = "<group>";
@@ -149,9 +155,11 @@
 				E5DDBCFA23479E4900A7196C /* operatorsrl.c in Sources */,
 				821A16D8234655A3001EF0E0 /* projqs.c in Sources */,
 				7FFC0FC7234799A4001E43FD /* ControlFlowOperators.c in Sources */,
+				A5E141082347D99E00A09A90 /* structuresmc.c in Sources */,
 				6DD934FC2344FBD7004123FB /* main.c in Sources */,
 				6D9466BF2345724300A2E02A /* ifelse.c in Sources */,
 				4F6123832346507200F4BDC1 /* Binary_Team_Question_8.c in Sources */,
+				92A157CA234B902500BE415C /* conversion.c in Sources */,
 				6D9466BD2345723900A2E02A /* forloop.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
