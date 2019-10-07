@@ -16,6 +16,7 @@
 		92A157CA234B902500BE415C /* conversion.c in Sources */ = {isa = PBXBuildFile; fileRef = 92A157C9234B902500BE415C /* conversion.c */; };
 		A5E141082347D99E00A09A90 /* structuresmc.c in Sources */ = {isa = PBXBuildFile; fileRef = A5E141072347D99E00A09A90 /* structuresmc.c */; };
 		E5DDBCFA23479E4900A7196C /* operatorsrl.c in Sources */ = {isa = PBXBuildFile; fileRef = E5DDBCF923479E4900A7196C /* operatorsrl.c */; };
+		F5F17EB4234B919900BA4918 /* projMgrs.c in Sources */ = {isa = PBXBuildFile; fileRef = F5F17EB3234B919900BA4918 /* projMgrs.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		92A157C9234B902500BE415C /* conversion.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = conversion.c; sourceTree = "<group>"; };
 		A5E141072347D99E00A09A90 /* structuresmc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = structuresmc.c; sourceTree = "<group>"; };
 		E5DDBCF923479E4900A7196C /* operatorsrl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = operatorsrl.c; sourceTree = "<group>"; };
+		F5F17EB3234B919900BA4918 /* projMgrs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = projMgrs.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				6D9466C02345725200A2E02A /* testqs.h */,
+				F5F17EB3234B919900BA4918 /* projMgrs.c */,
 				6D9466BC2345723900A2E02A /* forloop.c */,
 				6D9466BE2345724300A2E02A /* ifelse.c */,
 				821A16D7234655A3001EF0E0 /* projqs.c */,
@@ -158,6 +161,7 @@
 				A5E141082347D99E00A09A90 /* structuresmc.c in Sources */,
 				6DD934FC2344FBD7004123FB /* main.c in Sources */,
 				6D9466BF2345724300A2E02A /* ifelse.c in Sources */,
+				F5F17EB4234B919900BA4918 /* projMgrs.c in Sources */,
 				4F6123832346507200F4BDC1 /* Binary_Team_Question_8.c in Sources */,
 				92A157CA234B902500BE415C /* conversion.c in Sources */,
 				6D9466BD2345723900A2E02A /* forloop.c in Sources */,
