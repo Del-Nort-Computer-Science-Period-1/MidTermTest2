@@ -34,7 +34,7 @@ int main(int argc, const char * argv[]) {
         printf("|  4. for loop question                | %s\n", (menuRun[4] ? runMsg2D[4] : notRun) );
         printf("|  5. xxx                              | %s\n", (menuRun[5] ? runMsg2D[5] : notRun) );
         printf("|  6. seconds calc                     | %s\n", (menuRun[6] ? runMsg2D[6] : notRun) );
-        printf("|  7. Structures Q                            | %s\n", (menuRun[7] ? runMsg2D[7] : notRun) );
+        printf("|  7. Structures Q                     | %s\n", (menuRun[7] ? runMsg2D[7] : notRun) );
         printf("|  8. Binary Q                         | %s\n", (menuRun[8] ? runMsg2D[8] : notRun) );
         printf("|  9. xxx                              | %s\n", (menuRun[9] ? runMsg2D[9] : notRun) );
         printf("| 10.                              | %s\n", (menuRun[10] ? runMsg2D[10] : notRun) );
