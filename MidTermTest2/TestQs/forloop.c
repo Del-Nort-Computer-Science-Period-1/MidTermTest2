@@ -67,7 +67,7 @@ int forloopQ(char *message) {
         sprintf(message, "1/1");
     }
     else {
-        sprintf(message, "0/0");
+        sprintf(message, "0/1");
     }
     printf("%s\n", message);
     printf("Your score is %d out of 1\n", score) ;
