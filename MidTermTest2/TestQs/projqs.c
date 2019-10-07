@@ -4,7 +4,8 @@
 //
 //  Created by Szeto, Colin on 10/3/19.
 //  Copyright © 2019 Huynh, Kaitlyn. All rights reserved.
-//
+//  Coded by Do, Kevin.
+//  Last Edited on 10/7/19 by Do, Kevin.
 
 #include "testqs.h"
 
@@ -69,7 +70,7 @@ char answer;
         sprintf(message, "score: 100%%");
         } else {
             printf("Your answer was incorrect.");
-            sprintf(message, "score: 0%%");
+            sprintf(message, "Score: 0%%");
         }
     
     
