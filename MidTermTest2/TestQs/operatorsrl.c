@@ -8,24 +8,31 @@
 
 #include "testqs.h"
 #include <stdio.h>
-char answerOne;
-int operatorsrl ()
+int sumOfAll(int numTimesRun) {
+    int sum = 0;
+    for (int i = 1; i <= numTimesRun; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+void operatorsrl ()
 {
-    printf("What is the output of this code:");
-    printf("int i;\nfor (i = 1; i <= 10; i++) {\n}\nprintf(\"%%d\", i);\n\n");
-    printf("A: 11\nB: 1\nC: 10\nD: 9\n");
+    char answerOne;
+    printf("What is the output of this code if the input is 5:\n");
+    printf("int sumOfAll(int numTimesRun) {\nint sum = 0;\nfor (i = 1; i <= numTimesRun; i++) {sum += i;\n}\nreturn sum;\n}\n\n");
+    printf("A: %d\nB: %d\nC: %d\nD: %d\n", sumOfAll(4), sumOfAll(5), sumOfAll(6), sumOfAll(7));
     scanf("%c", &answerOne);
     scanf("%c", &answerOne);
     if (answerOne == 'a' || answerOne == 'A') {
-        printf("Correct!\n");
+        printf("Incorrect: The loop will add 1 and then 2 and so on up to the number of time the user inputs. The total will be 15 in this case.\n");
     } else if (answerOne == 'b' || answerOne == 'B'){
-        printf("Incorrect: The loop will add one each time it goes through, and the loop will run until \"i\" is greater than 10.\n");
+        printf("Correct!\n");
     } else if (answerOne == 'c' || answerOne == 'C') {
-        printf("Incorrect: The loop will break only if \"i\" is greater that 10 which will be 11.\n");
+        printf("Incorrect: The loop will add 1 and then 2 and so on up to the number of time the user inputs. The total will be 15 in this case.\n");
     } else if (answerOne == 'd' || answerOne == 'D') {
-        printf("Incorrect: The loop has <= which means that the loop will break if \"i\" is greater than 10 not less than.\n");
+        printf("Incorrect: The loop will add 1 and then 2 and so on up to the number of time the user inputs. The total will be 15 in this case.\n");
     }
     
-    return 1;
 }
 

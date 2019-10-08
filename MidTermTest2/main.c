@@ -74,7 +74,7 @@ int main(int argc, const char * argv[]) {
                         break;
                     }
                 case 3:
-                    menuRun[input] = operatorsrl(runMsg2D[input]);
+                    operatorsrl();
                     break;
                 case 4:
                     controlflowoperators();
