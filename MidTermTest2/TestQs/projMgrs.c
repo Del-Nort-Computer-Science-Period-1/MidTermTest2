@@ -46,6 +46,12 @@ int projMgrs(void)
             puts("This answer is invalid. Try Again.\n");
             count++;
             printf("You have put something random %d times\n", count);
+            if (count>49)
+            {
+                printf("You are a special little one aren't you? \n  ___  ___\n  |_|  |_|\n     > \n  |___|\n\n");
+            }
+            
+
             break;
     }
     }
