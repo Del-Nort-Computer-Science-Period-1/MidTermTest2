@@ -28,21 +28,21 @@ long long convertDecimalToBinary(int n) {
 long long option2(){
     int b = rand() % 10;
     long long ansrb = convertDecimalToBinary(b);
-    printf("\n%lld",ansrb);
+    printf("\n%lld\n",ansrb);
     return ansrb;
 }
 //option3
 long long option3(){
     int c = rand() % 10;
     long long ansrc = convertDecimalToBinary(c);
-    printf("\n%lld",ansrc);
+    printf("\n%lld\n",ansrc);
     return ansrc;
 }
 //option4
 long long option4(){
     int d = rand() % 10;
     long long ansrd = convertDecimalToBinary(d);
-    printf("\n%lld",ansrd);
+    printf("\n%lld\n",ansrd);
     return ansrd;
 }
 // question
@@ -52,51 +52,55 @@ int BinaryQ(char *message){
     int n = rand() % 10;
     long long ansr1 = convertDecimalToBinary(n);
     int ansr=0, input;
-    printf("what is %i in binary",n);
+    printf("\nwhat is %i in binary?\n",n);
     
     int cas = rand() % 3;
     
     switch (cas){
         case 0:
-            printf("\n 1: %lld\n",ansr1);
-            printf("\n 2: \n");
+            printf("\n a.\n");
+            printf("\n%lld\n",ansr1);
+            printf("\n b. \n");
             option3();
-            printf("\n 3: \n");
+            printf("\n c. \n");
             option4();
-            printf("\n 4: \n");
+            printf("\n d. \n");
             option2();
-            ansr = 1;
+            ansr = 'a';
             break;
         case 1:
-            printf("\n 1: \n");
+            printf("\n a. \n");
             option3();
-            printf("\n 2:  \n %lld \n",ansr1);
-            printf("\n 3: \n");
+            printf("\n b. \n");
+            printf("\n %lld \n",ansr1);
+            printf("\n c. \n");
             option2();
-            printf("\n 4: \n");
+            printf("\n d. \n");
             option4();
-            ansr = 2;
+            ansr = 'b';
             break;
         case 2:
-            printf("\n 1: \n");
+            printf("\n a. \n");
             option4();
-            printf("\n 2: \n");
+            printf("\n b. \n");
             option2();
-            printf("\n 3: \n");
+            printf("\n c. \n");
             option3();
-            printf("\n 4: \n%lld",ansr1);
-            ansr = 4;
+            printf("\n d. \n");
+            printf("\n%lld \n",ansr1);
+            ansr = 'd';
             break;
         case 3:
-            printf("\n 1: \n");
+            printf("\n a. \n");
             option2();
-            printf("\n 2: \n");
+            printf("\n b. \n");
             option4();
-            printf("\n 3: %lld \n",ansr1);
-            printf("\n 4: \n");
+            printf("\n c.");
+            printf("\n%lld \n",ansr1);
+            printf("\n d. \n");
             option3();
             printf("\n");
-            ansr = 3;
+            ansr = 'c';
             break;
         }
     
@@ -104,10 +108,10 @@ int BinaryQ(char *message){
         scanf("%i",&input);
 
         if (ansr == input){
-            printf("correct\n");
+            printf("\ncorrect\n");
         }
         else {
-            printf("incorrect\n");
+            printf("\nincorrect\n");
         }
     
     
