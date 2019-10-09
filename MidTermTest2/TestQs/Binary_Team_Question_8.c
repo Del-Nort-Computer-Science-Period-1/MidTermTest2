@@ -13,8 +13,7 @@
 
 // converter
 long long convertDecimalToBinary(int n) {
-    long long binaryNumber = 0;
-    int remainder, i = 1;
+    long long binaryNumber = 0;    int remainder, i = 1;
     while (n!=0)
     {
         remainder = n%2;
