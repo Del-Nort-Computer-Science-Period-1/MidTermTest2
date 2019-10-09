@@ -7,3 +7,10 @@
 //
 
 #include "ideqs.h"
+int ideqs()
+{
+printf("hello world")
+
+
+return 0;
+}
