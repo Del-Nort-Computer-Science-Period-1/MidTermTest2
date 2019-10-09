@@ -99,10 +99,7 @@ int main(int argc, const char * argv[]) {
                     projMgrs();
                     break;
                 case 10:
-                    // function: histogram prints starts
-                    // param: runMsg2D[] is updated through function call
-                    // returns: >=0 questions run, <0 if failure
-                    //menuRun[10] = histogram(runMsg2D[10]);
+                    menuRun[input] = ideqs(runMsg2D[input]);
                     break;
                 case 0:
                     input = 32227;  // 0 does not exit
