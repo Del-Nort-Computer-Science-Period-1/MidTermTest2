@@ -28,7 +28,7 @@ int ideqs(char *message)
     char answer1;
     printf("----------------------------------------\n");
     fputs (
-           "int ifelseControl(int num1, int num2)\n"
+           "int idefun(int num1, int num2)\n"
            "{\n"
            "\tint result = 5;\n"
            "\tif ((num1 < 10) && (num2 < 5))\n"
