@@ -18,7 +18,7 @@ int structuresmc(char *message);
 
 void operatorsrl (void);
 int projMgrs(void);
-int ideqs(char *message)
+int ideqs(char *message);
 
 
 int conversionQ(char *message);
