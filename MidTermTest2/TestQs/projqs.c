@@ -21,9 +21,12 @@ int projqs(char *message) {
     /*[D]*/  char *answerD = "/  -  +";
     //--------------------------------------------------------
     
+    
+    // the comments allow for the front end or the coder to see wha the ui is while coding /\
+    
 char answer; //declare variable for user input
     
-    printf("\nWhich option states the best operators that \ncould be used in the function below?"); //printing question
+    printf("\nWhich option states the best operators that \ncould be used in the function below?"); //printing question (this is the ui that the/backend that the students see)
     printf("\n___________________________________________________________\n\n");
     printf("Function:\n\n");
     fputs (
@@ -39,11 +42,11 @@ char answer; //declare variable for user input
 
     
     
-    scanf("%s", &answer);
+    scanf("%s", &answer); //scan f reads the input
     printf("_______________________________________________\n\n");
 
     switch(answer) { //change which answer is correct/incorrect and edit scoring
-        case 'A':
+        case 'A': //the cas is like an if statment "if cas a" then
         case 'a':
             printf("Your answer is incorrect.");
             sprintf(message, "0/1");
