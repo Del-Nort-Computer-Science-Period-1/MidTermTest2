@@ -21,7 +21,7 @@ int projqs(char *message) {
     /*[D]*/  char *answerD = "/  -  +";
     //--------------------------------------------------------
     
-char answer;
+char answer; //declare variable for user input
     
     printf("\nWhich option states the best operators that \ncould be used in the function below?"); //printing question
     printf("\n___________________________________________________________\n\n");
@@ -66,5 +66,5 @@ char answer;
     }
 
     
-    return *message;
+    return *message; //return message (0/1 or 1/1) to main.c
 }
