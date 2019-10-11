@@ -23,7 +23,7 @@ int ifelseControl(int num1, int num2)
 
 int ifelseQ(char *message)
 {
-    int score = 0;
+    int score = 0; //Defines score as a variable. The initial score is 0.
     char answer1;
     printf("----------------------------------------\n");
     fputs (
