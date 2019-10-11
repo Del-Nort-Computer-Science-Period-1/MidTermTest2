@@ -1,5 +1,5 @@
 //
-//  TrueFalseQ.c
+//  structursemc.c
 //
 //
 //  Created by Sutherland, Zachary on 10/3/19.
