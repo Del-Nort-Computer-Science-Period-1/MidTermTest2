@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EE3490A234CF66100EA8012 /* idedev.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EE34909234CF66100EA8012 /* idedev.c */; };
 		4F6123832346507200F4BDC1 /* Binary_Team_Question_8.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F6123822346507200F4BDC1 /* Binary_Team_Question_8.c */; };
 		6D9466BD2345723900A2E02A /* forloop.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D9466BC2345723900A2E02A /* forloop.c */; };
 		6D9466BF2345724300A2E02A /* ifelse.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D9466BE2345724300A2E02A /* ifelse.c */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3EE34909234CF66100EA8012 /* idedev.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = idedev.c; sourceTree = "<group>"; };
 		4F6123822346507200F4BDC1 /* Binary_Team_Question_8.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Binary_Team_Question_8.c; sourceTree = "<group>"; };
 		6D9466BC2345723900A2E02A /* forloop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = forloop.c; sourceTree = "<group>"; };
 		6D9466BE2345724300A2E02A /* ifelse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ifelse.c; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				E5DDBCF923479E4900A7196C /* operatorsrl.c */,
 				A5E141072347D99E00A09A90 /* structuresmc.c */,
 				92A157C9234B902500BE415C /* conversion.c */,
+				3EE34909234CF66100EA8012 /* idedev.c */,
 			);
 			path = TestQs;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				821A16D8234655A3001EF0E0 /* projqs.c in Sources */,
 				7FFC0FC7234799A4001E43FD /* ControlFlowOperators.c in Sources */,
 				A5E141082347D99E00A09A90 /* structuresmc.c in Sources */,
+				3EE3490A234CF66100EA8012 /* idedev.c in Sources */,
 				6DD934FC2344FBD7004123FB /* main.c in Sources */,
 				6D9466BF2345724300A2E02A /* ifelse.c in Sources */,
 				F5F17EB4234B919900BA4918 /* projMgrs.c in Sources */,
