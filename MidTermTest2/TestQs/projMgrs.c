@@ -5,7 +5,12 @@
 //  Created by Maheshwari, Navodit on 10/4/19.
 //  Copyright © 2019 Huynh, Kaitlyn. All rights reserved.
 //
-/* In this code we have a question relating to fork. The question is example code related to the fork process and we ask which line would print third. It tests the student's understanding of of the fork process and the ordering of the child and parent. One of the special things we added was that if one of the inputs fall into the default or put in a invalid answer, it goes back and repeats the question until they put a valid answer. We also have a counter which tells how many times they have put a invalid option. After the counter reaches 50, it prints a message. */
+/* In this code we have a question relating to fork. The question is example code related to the fork process 
+and we ask which line would print third. It tests the student's understanding of of the fork process and the 
+ordering of the child and parent. One of the special things we added was that if one of the inputs fall 
+into the default or put in a invalid answer, it goes back and repeats the question until they put a 
+valid answer. We also have a counter which tells how many times they have put a invalid option. After the counter 
+reaches 50, it prints a message. */
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
