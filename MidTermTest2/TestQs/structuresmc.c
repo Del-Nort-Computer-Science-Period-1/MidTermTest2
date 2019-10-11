@@ -15,6 +15,7 @@
  powerrangers[i] = i;
  printf("powerrangers[%d] = %d\n",i,powerrangers[i]);
  */
+// This code is meant to produce a multiple choice question that tests students' understanding of arrays and how the integer "i" applies to them. Students need to know that, in an array, "i=0" refers to element one, "i=1" refers to element two, and so on in order to answer the question correctly.
 #include "testqs.h"
 #define SIZE 6
 int powerrangers(int i)//Running array for answer choices
