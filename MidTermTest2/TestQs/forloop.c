@@ -18,7 +18,7 @@ int forloop(int val)
 
 
 int forloopQ(char *message) {
-    int score = 0;
+    int score = 0; //Defines score as a variable. The initial score is 0.
     char answer1;
     printf("----------------------------------------\n");
     fputs (
@@ -42,36 +42,40 @@ int forloopQ(char *message) {
             printf ("A: forloop(%d)=%d\n", 13, forloop(13));
             printf("Correct Answer\n") ;
             score += 1 ;
+            // Score adds 1 if A is answered
             break;
         case 'B':
         case 'b':
             printf ("B: forloop(%d)=%d\n", 14, forloop(14));
             printf("Incorrect Answer\n") ;
             score += 0 ;
+            // Score adds 0 if B is answered
             break;
         case 'c':
         case 'C':
             printf ("C: forloop(%d)=%d\n", 15, forloop(15));
             printf("Incorrect Answer\n") ;
             score += 0 ;
+            // Score adds 0 if C is answered
             break;
         case 'd':
         case 'D':
             printf ("D: forloop(%d)=%d\n", 19, forloop(19));
             printf("Incorrect Answer\n") ;
             score += 0 ;
+            // Score adds 0 if D is answered
             break;
             
     }
     if (score == 1) {
         sprintf(message, "1/1");
+        // If score = 1 message 1/1 is print back
     }
     else {
         sprintf(message, "0/1");
+        // If score = 0 message 0/1 is print back
     }
-    printf("%s\n", message);
-    printf("Your score is %d out of 1\n", score) ;
-    
+   
     return *message ;
 }
 

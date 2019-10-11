@@ -1,5 +1,5 @@
 //
-//  TrueFalseQ.c
+//  structursemc.c
 //
 //
 //  Created by Sutherland, Zachary on 10/3/19.
@@ -15,9 +15,10 @@
  powerrangers[i] = i;
  printf("powerrangers[%d] = %d\n",i,powerrangers[i]);
  */
+// This code is meant to produce a multiple choice question that tests students' understanding of arrays and how the integer "i" applies to them. Students need to know that, in an array, "i=0" refers to element one, "i=1" refers to element two, and so on in order to answer the question correctly.
 #include "testqs.h"
 #define SIZE 6
-int powerrangers(int i)
+int powerrangers(int i)//Running array for answer choices
 {
     int powerrangers[SIZE];
     int list[6] = {2,8,11,13,18,10099354};
@@ -28,7 +29,7 @@ int powerrangers(int i)
 
 int structuresmc(char *message) {
     char answer1;
-    printf("----------------------------------------\n");
+    printf("----------------------------------------\n");//Printed array for test-taker
     fputs (
            "{\n"
            "int powerrangers[SIZE] = {2,8,11,13,18,10099354};\n"
@@ -36,35 +37,30 @@ int structuresmc(char *message) {
            "}\n",
            stdout);
     
-    printf("What is returned when i=3 in this code?\n");
+    printf("What is returned when i=3 in this code?\n"); //question as it appears to test taker
     printf("----------------------------------------\n");
-    printf("Enter A, B, C, or D");
+    printf("Enter A, B, C, or D"); //answer choices that can be entered by test-taker
     printf("                                                                            \n");
-    printf("[A] %d\n[B] %d\n[C] %d\n[D] %d\n", powerrangers(1), powerrangers(2), powerrangers(3), powerrangers(4));
+    printf("[A] %d\n[B] %d\n[C] %d\n[D] %d\n", powerrangers(1), powerrangers(2), powerrangers(3), powerrangers(4)); //connects answer choices to different elements in the array
     printf("-----------------------------------------\n");
     
   
     while ((answer1 = getchar()) == '\n');
-    //answer1 = getchar();
-    switch (answer1) {
+        switch (answer1) { //Prints different messages depending on the answer choice chosen by the test-taker
         case 'a':
         case 'A':
-            //printf ("A: struc(%d)=%d\n", powerrangers(1));
             printf("Sorry, that is incorrect.\n");
             break;
         case 'b':
         case 'B':
-            //printf ("B: struc(%d)=%d\n", powerrangers(2));
             printf("Sorry, that is incorrect.\n");
             break;
         case 'c':
         case 'C':
-           // printf ("C: struc(%d)=%d\n", powerrangers(3));
             printf("Yes, that is correct!\n");
             break;
         case 'd':
         case 'D':
-            //printf ("D: struc(%d)=%d\n", powerrangers(4));
             printf("Sorry, that is incorrect.\n");
     }
     return 0;
