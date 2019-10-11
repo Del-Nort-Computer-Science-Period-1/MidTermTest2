@@ -5,7 +5,7 @@
 //  Created by Taha, Nick on 10/8/19.
 //  Copyright © 2019 Huynh, Kaitlyn. All rights reserved.
 //
-
+//
 #include "testqs.h"
 int idefun(int num1, int num2)
 {
@@ -68,7 +68,7 @@ int ideqs(char *message)
             printf("Incorrect Answer\n") ;
             break;
     }
-
+//this code provides the answers and asks the user to answer and reacts with a program for a, b, c, or d inputs
 
     
 
