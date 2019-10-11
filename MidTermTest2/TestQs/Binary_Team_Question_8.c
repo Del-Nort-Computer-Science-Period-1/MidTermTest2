@@ -102,7 +102,7 @@ int BinaryQ(char *message){
             ansr = 'c';
             break;
         }
-    
+    // this is to test the answer of the question (Dhruv)
         printf("\nwhat is the answer?\n");
         scanf("%i",&input);
 
