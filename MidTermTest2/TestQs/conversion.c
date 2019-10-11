@@ -4,9 +4,12 @@
 //
 //  Created by Ravula, Neeharika on 10/7/19.
 //  Copyright © 2019 Huynh, Kaitlyn. All rights reserved.
-//
+//  comments are inputed by Neeha Ravula, Jaisel Singh, and Shreya Nagesh
 
 #include "testqs.h"
+
+// converts two float values to an integer output
+// calls the method below; sets up the format
 
 int conversion(float val1, float val2)
 {
@@ -14,6 +17,7 @@ int conversion(float val1, float val2)
     return result;
 }
 
+//prints snippet of code in question
 int conversionQ(char *message)
 {
     char answer1;
@@ -26,6 +30,9 @@ int conversionQ(char *message)
            "\treturn result;\n"
            "}\n",
            stdout);
+    
+    // asks question below and prints the answer choices in an ABCD form - Jaisel Singh
+    // inputs specific float values of 24.5 and 7.3
     
     printf("What is the integer output of 24.5/7.2?\n");
     printf("----------------------------------------\n");
@@ -53,6 +60,9 @@ int conversionQ(char *message)
     }
     sprintf(message, "Params %f, %f, Result: %d", 24.5, 7.2, conversion(24.5, 7.2));
     printf("%s", message);
+    
+    // prints the results and parameters
+
     
     return 1;
 }
