@@ -13,6 +13,7 @@ int control(int num) {
 
     }
     return num;
+}
 //  our intial fuction will, for an initial input of 'x' add 0, then add 1, then add 2 ect... then add 9. It will then return an output of 'num'. (Gwen Vestal)
 // Our second fuction is the mulitple choice question where we print the code for our first function for the reader to see, then call on the first function's code for the answers. (Joseph L)
 void controlflowoperators(){
