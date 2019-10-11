@@ -44,6 +44,7 @@ int ideqs(char *message)
     printf("What is returned by the call idefun(8, 10)?\n");
     printf("----------------------------------------\n");
     printf("[A] %d\n[B] %d\n[C] %d\n[D] %d\n", idefun(2, 13), idefun(8, 10), idefun(1,25), idefun(4,1));
+    // the idefun(num1,num2) is literally the values which are used to be put in the function in which the output integer is put into the multiple choice. (NICK TAHA)
     while ((answer1 = getchar()) != '\n');
     answer1 = getchar();
     switch (answer1) {
