@@ -8,6 +8,7 @@
 
 #include "testqs.h"
 #include <stdio.h>
+//defines variables
 int sumOfAll(int numTimesRun) {
     int sum = 0;
     for (int i = 1; i <= numTimesRun; i++) {
