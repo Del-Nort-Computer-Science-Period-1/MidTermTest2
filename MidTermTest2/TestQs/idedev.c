@@ -40,7 +40,7 @@ int ideqs(char *message)
            "\treturn result;\n"
            "}\n",
            stdout);
-    
+    // this code will be printed out to the test taker so they see the function that they are answering from (dylan gibson)
     printf("What is returned by the call idefun(8, 10)?\n");
     printf("----------------------------------------\n");
     printf("[A] %d\n[B] %d\n[C] %d\n[D] %d\n", idefun(2, 13), idefun(8, 10), idefun(1,25), idefun(4,1));
