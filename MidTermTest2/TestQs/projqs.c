@@ -21,14 +21,14 @@ int projqs(char *message) {
     /*[D]*/  char *answerD = "/  -  +";
     //--------------------------------------------------------
     
-char answer;
+char answer; //declare variable for user input
     
     printf("\nWhich option states the best operators that \ncould be used in the function below?"); //printing question
     printf("\n___________________________________________________________\n\n");
     printf("Function:\n\n");
     fputs (
            "The function is able to convert seconds to days, hours,\n"
-           "minutes, and seconds.",
+           "minutes, and seconds.", //displays the type of function that goes with question
            stdout);
     printf("\n___________________________________________________________\n\n");
     printf("Answer with capital letter only.\n\n"); //print answer choices
@@ -66,5 +66,5 @@ char answer;
     }
 
     
-    return *message;
+    return *message; //return message (0/1 or 1/1) to main.c
 }
