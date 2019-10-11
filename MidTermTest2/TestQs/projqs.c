@@ -28,7 +28,7 @@ char answer; //declare variable for user input
     printf("Function:\n\n");
     fputs (
            "The function is able to convert seconds to days, hours,\n"
-           "minutes, and seconds.",
+           "minutes, and seconds.", //displays the type of function that goes with question
            stdout);
     printf("\n___________________________________________________________\n\n");
     printf("Answer with capital letter only.\n\n"); //print answer choices
