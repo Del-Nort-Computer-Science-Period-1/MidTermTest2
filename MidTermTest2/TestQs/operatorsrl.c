@@ -20,7 +20,7 @@ void operatorsrl ()
 {
     char answerOne;
     printf("What is the output of this code if the input is 5:\n");
-    printf("int sumOfAll(int numTimesRun) {\nint sum = 0;\nfor (i = 1; i <= numTimesRun; i++) {sum += i;\n}\nreturn sum;\n}\n\n");
+    printf("int sumOfAll(int numTimesRun) {\nint sum = 0;\nfor (i = 1; i <= numTimesRun; i++) {sum += i;\n}\nreturn sum;\n}\n\n"); //prints out the code and asks for the answer -lola B
     printf("A: %d\nB: %d\nC: %d\nD: %d\n", sumOfAll(4), sumOfAll(5), sumOfAll(6), sumOfAll(7));
     scanf("%c", &answerOne);
     scanf("%c", &answerOne);
