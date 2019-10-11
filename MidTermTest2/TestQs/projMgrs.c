@@ -5,7 +5,7 @@
 //  Created by Maheshwari, Navodit on 10/4/19.
 //  Copyright © 2019 Huynh, Kaitlyn. All rights reserved.
 //
-
+/* In this code we have a question relating to fork. The question is example code related to the fork process and we ask which line would print third. It tests the student's understanding of of the fork process and the ordering of the child and parent. One of the special things we added was that if one of the inputs fall into the default or put in a invalid answer, it goes back and repeats the question until they put a valid answer. We also have a counter which tells how many times they have put a invalid option. After the counter reaches 50, it prints a message. */
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -15,8 +15,7 @@ static char option3[50];
 static char option4[50];
 int loop = 0;
 int check = 1;
-
-int forkexample()
+int forkexample() // Fork splits the process into a child and parent.
 { if (check>0)
 {
     printf("What is printed on the third line of this code?\n Note printfs are going to be in psuedo code otherwise the printf breaks, d is percent d.\n");
@@ -98,7 +97,7 @@ int main()
             case 'C':;
                 printf("%s\n", option4);
                 printf("Incorrect: \n");
-                loop++;
+                loop++; //helps repeat if the answer is invalid
                 break;
                 
             case 'd':
@@ -116,7 +115,7 @@ int main()
                 
             default:
                 puts("This answer is invalid. Try Again.\n");
-                count++;
+                count++; // counter to tell how many times the have put an invalid answer.
                 printf("You have put something random %d times\n", count);
                 if (count>49)
                 {
