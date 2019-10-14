@@ -20,6 +20,7 @@ static char option3[50];
 static char option4[50];
 int loop = 0;
 int check = 1;
+
 int forkexample() // Fork splits the process into a child and parent.
 { if (check>0)
 {
@@ -64,7 +65,8 @@ int forkexample() // Fork splits the process into a child and parent.
     }
     return a;
 }
-int main()
+
+int mainfoo()
 {
     
     if (forkexample()>0)
@@ -133,7 +135,6 @@ int main()
     }
     return 0;
     
-    return 0;
 }
 
 

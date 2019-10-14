@@ -96,7 +96,7 @@ int main(int argc, const char * argv[]) {
                     // function: questionManager drives logic for Test Questions
                     // param: runMsg2D[] is updated through function call
                     // returns: 0
-                    projMgrs();
+                    forkexample();
                     break;
                 case 10:
                     menuRun[input] = ideqs(runMsg2D[input]);

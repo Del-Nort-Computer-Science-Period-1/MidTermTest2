@@ -20,7 +20,7 @@
 #define SIZE 6
 int powerrangers(int i)//Running array for answer choices
 {
-    int powerrangers[SIZE];
+    //int powerrangers[SIZE];
     int list[6] = {2,8,11,13,18,10099354};
     
     return list[i];

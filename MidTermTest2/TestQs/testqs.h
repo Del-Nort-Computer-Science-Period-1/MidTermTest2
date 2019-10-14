@@ -17,7 +17,7 @@ void controlflowoperators (void);
 int structuresmc(char *message);
 
 void operatorsrl (void);
-int projMgrs(void);
+int forkexample(void);
 int ideqs(char *message);
 
 
